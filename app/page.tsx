@@ -46,7 +46,10 @@ export default function HomePage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center py-4">
             <div className="flex flex-col">
-              <h1 className="text-2xl md:text-3xl font-bold" style={{color: '#000000', fontFamily: 'var(--font-sora)'}}>EasyshiftX</h1>
+              <div className="flex items-center gap-3">
+                <img src="/images/logo.jpg" alt="EasyshiftX logo" style={{width: '40px', height: '40px', objectFit: 'contain', borderRadius: '0.5rem'}} />
+                <h1 className="text-2xl md:text-3xl font-bold" style={{color: '#000000', fontFamily: 'var(--font-sora)'}}>EasyshiftX</h1>
+              </div>
               <p className="text-xs md:text-sm" style={{color: '#FF6B35'}}>Your Trusted Moving Partner Since 2018</p>
             </div>
             <nav className="hidden md:flex space-x-6">
