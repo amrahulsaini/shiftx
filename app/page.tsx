@@ -18,10 +18,10 @@ export default function HomePage() {
   ];
 
   const reviews = [
-    { name: "Rajesh Kumar", rating: 5, text: "Excellent service! They moved my entire office in just 2 days. Very professional team.", location: "Delhi" },
-    { name: "Priya Sharma", rating: 5, text: "Best packers and movers I've ever used. Everything arrived safely. Highly recommended!", location: "Mumbai" },
-    { name: "Amit Patel", rating: 5, text: "Great experience with ShiftX. Affordable pricing and careful handling of all items.", location: "Ahmedabad" },
-    { name: "Sneha Reddy", rating: 5, text: "They handled my car transport perfectly. No scratches, delivered on time!", location: "Bangalore" }
+  { name: "Rajesh Kumar", rating: 5, text: "Excellent service! They moved my entire office in just 2 days. Very professional team.", location: "Delhi" },
+  { name: "Priya Sharma", rating: 5, text: "Best packers and movers I've ever used. Everything arrived safely. Highly recommended!", location: "Mumbai" },
+  { name: "Amit Patel", rating: 5, text: "Great experience with EasyshiftX. Affordable pricing and careful handling of all items.", location: "Ahmedabad" },
+  { name: "Sneha Reddy", rating: 5, text: "They handled my car transport perfectly. No scratches, delivered on time!", location: "Bangalore" }
   ];
 
   const faqs = [
@@ -46,7 +46,7 @@ export default function HomePage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center py-4">
             <div className="flex flex-col">
-              <h1 className="text-2xl md:text-3xl font-bold" style={{color: '#000000', fontFamily: 'var(--font-sora)'}}>ShiftX</h1>
+              <h1 className="text-2xl md:text-3xl font-bold" style={{color: '#000000', fontFamily: 'var(--font-sora)'}}>EasyshiftX</h1>
               <p className="text-xs md:text-sm" style={{color: '#FF6B35'}}>Your Trusted Moving Partner Since 2018</p>
             </div>
             <nav className="hidden md:flex space-x-6">
@@ -108,6 +108,10 @@ export default function HomePage() {
 
       <section id="about" className="py-20 px-4" style={{background: '#000000'}}>
         <div className="max-w-7xl mx-auto">
+          {/* About Section Image - perfectly centered, no extra background */}
+          <div style={{display: 'flex', justifyContent: 'center', alignItems: 'center', marginBottom: '2rem'}}>
+            <img src="/images/about_lineart.png" alt="Team moving boxes line art" style={{maxWidth: '320px', width: '100%', height: 'auto', background: 'none', boxShadow: 'none', opacity: 1, borderRadius: '1rem'}} />
+          </div>
           <h3 className="text-4xl md:text-5xl font-bold text-center mb-4 animate-fade-in-up" style={{color: '#FFFFFF', fontFamily: 'var(--font-sora)'}}>Who We Are</h3>
           <p className="text-center text-lg mb-12 max-w-3xl mx-auto" style={{color: '#FFFFFF'}}>Your Premier Relocation Partner - Committed to Excellence in Every Move</p>
           <div className="grid md:grid-cols-2 gap-8">
@@ -117,7 +121,7 @@ export default function HomePage() {
                 <h4 className="text-2xl font-semibold" style={{color: '#000000', fontFamily: 'var(--font-sora)'}}>Company Overview</h4>
               </div>
               <div className="space-y-4" style={{color: '#333333', fontFamily: 'var(--font-source-sans-3)'}}>
-                <div className="flex items-start gap-3"><CheckCircle2 className="w-5 h-5 mt-1 flex-shrink-0" style={{color: '#FF6B35'}} /><div><strong>Company Name:</strong> ShiftX</div></div>
+                <div className="flex items-start gap-3"><CheckCircle2 className="w-5 h-5 mt-1 flex-shrink-0" style={{color: '#FF6B35'}} /><div><strong>Company Name:</strong> EasyshiftX</div></div>
                 <div className="flex items-start gap-3"><CheckCircle2 className="w-5 h-5 mt-1 flex-shrink-0" style={{color: '#FF6B35'}} /><div><strong>Established:</strong> 2018</div></div>
                 <div className="flex items-start gap-3"><CheckCircle2 className="w-5 h-5 mt-1 flex-shrink-0" style={{color: '#FF6B35'}} /><div><strong>Service Area:</strong> PAN India (All States & Major Cities)</div></div>
                 <div className="flex items-start gap-3"><CheckCircle2 className="w-5 h-5 mt-1 flex-shrink-0" style={{color: '#FF6B35'}} /><div><strong>Languages:</strong> English, Hindi & Regional Languages</div></div>
@@ -147,6 +151,10 @@ export default function HomePage() {
 
       <section id="services" className="py-20 px-4" style={{background: '#FFFFFF'}}>
         <div className="max-w-7xl mx-auto">
+          {/* Services Section Image - perfectly centered, no extra background */}
+          <div style={{display: 'flex', justifyContent: 'center', alignItems: 'center', marginBottom: '2rem'}}>
+            <img src="/images/services_lineart.png" alt="Packers and movers services line art" style={{maxWidth: '320px', width: '100%', height: 'auto', background: 'none', boxShadow: 'none', opacity: 1, borderRadius: '1rem'}} />
+          </div>
           <h3 className="text-4xl md:text-5xl font-bold text-center mb-4" style={{color: '#000000', fontFamily: 'var(--font-sora)'}}>Our Premium Services</h3>
           <p className="text-center text-lg mb-12 max-w-3xl mx-auto" style={{color: '#333333'}}>End-to-End Relocation Solutions Designed for Your Success</p>
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -165,8 +173,8 @@ export default function HomePage() {
 
       <section className="py-20 px-4" style={{background: '#000000'}}>
         <div className="max-w-7xl mx-auto">
-          <h3 className="text-4xl md:text-5xl font-bold text-center mb-4" style={{color: '#FFFFFF', fontFamily: 'var(--font-sora)'}}>Why Partner With ShiftX?</h3>
-          <p className="text-center text-lg mb-12 max-w-3xl mx-auto" style={{color: '#FFFFFF'}}>Excellence, Reliability & Trust - The ShiftX Promise</p>
+          <h3 className="text-4xl md:text-5xl font-bold text-center mb-4" style={{color: '#FFFFFF', fontFamily: 'var(--font-sora)'}}>Why Partner With EasyshiftX?</h3>
+          <p className="text-center text-lg mb-12 max-w-3xl mx-auto" style={{color: '#FFFFFF'}}>Excellence, Reliability & Trust - The EasyshiftX Promise</p>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             <div className="p-6" style={{background: '#FFFFFF', border: '1px solid #FF6B35'}}><Shield className="w-12 h-12 mb-4" style={{color: '#FF6B35'}} /><h4 className="text-2xl font-bold mb-3" style={{color: '#000000', fontFamily: 'var(--font-sora)'}}>Complete Insurance Protection</h4><p style={{color: '#333333'}}>Every move is fully insured with comprehensive coverage, protecting your assets from origin to destination with zero compromise.</p></div>
             <div className="p-6" style={{background: '#FFFFFF', border: '1px solid #FF6B35'}}><Clock className="w-12 h-12 mb-4" style={{color: '#FF6B35'}} /><h4 className="text-2xl font-bold mb-3" style={{color: '#000000', fontFamily: 'var(--font-sora)'}}>24x7 Dedicated Support</h4><p style={{color: '#333333'}}>Our expert team is available round-the-clock to ensure seamless communication and immediate assistance throughout your relocation.</p></div>
@@ -218,10 +226,15 @@ export default function HomePage() {
           <p className="text-center text-lg mb-12" style={{color: '#333333'}}>Get in touch for a free quote and consultation</p>
           <div className="grid md:grid-cols-2 gap-10">
             <div className="space-y-6">
-              <div className="p-6 flex items-start gap-4 transition" style={{background: '#FFFFFF', border: '1px solid #000000'}}><div className="p-3" style={{background: '#FF6B35'}}><Phone className="w-6 h-6 text-white" /></div><div><h4 className="font-bold text-lg mb-1" style={{color: '#000000'}}>Phone Number</h4><p style={{color: '#333333'}}>8829814315</p></div></div>
-              <div className="p-6 flex items-start gap-4 transition" style={{background: '#FFFFFF', border: '1px solid #000000'}}><div className="p-3" style={{background: '#000000'}}><MessageCircle className="w-6 h-6 text-white" /></div><div><h4 className="font-bold text-lg mb-1" style={{color: '#000000'}}>WhatsApp</h4><p style={{color: '#333333'}}>8829814315</p></div></div>
-              <div className="p-6 flex items-start gap-4 transition" style={{background: '#FFFFFF', border: '1px solid #000000'}}><div className="p-3" style={{background: '#FF6B35'}}><Mail className="w-6 h-6 text-white" /></div><div><h4 className="font-bold text-lg mb-1" style={{color: '#000000'}}>Email</h4><p style={{color: '#333333'}}>easyShiftX@gmail.com</p></div></div>
-              <div className="p-6 flex items-start gap-4 transition" style={{background: '#FFFFFF', border: '1px solid #000000'}}><div className="p-3" style={{background: '#000000'}}><MapPin className="w-6 h-6 text-white" /></div><div><h4 className="font-bold text-lg mb-1" style={{color: '#000000'}}>Office Address</h4><p style={{color: '#333333'}}>Jaipur, Rajasthan, India</p></div></div>
+              <div className="p-6 flex items-start gap-4 transition" style={{background: '#FFFFFF', border: '1px solid #000000'}}>
+                <div className="p-3" style={{background: '#000000'}}><Phone className="w-6 h-6 text-white" /></div>
+                <div>
+                  <h4 className="font-bold text-lg mb-1" style={{color: '#000000'}}>Phone</h4>
+                  <p style={{color: '#333333'}}>8829814315</p>
+                </div>
+              </div>
+              <div className="p-6 flex items-start gap-4 transition" style={{background: '#FFFFFF', border: '1px solid #000000'}}><div className="p-3" style={{background: '#000000'}}><Mail className="w-6 h-6 text-white" /></div><div><h4 className="font-bold text-lg mb-1" style={{color: '#000000'}}>Email</h4><p style={{color: '#333333'}}>easyShiftX@gmail.com</p></div></div>
+              <div className="p-6 flex items-start gap-4 transition" style={{background: '#FFFFFF', border: '1px solid #000000'}}><div className="p-3" style={{background: '#000000'}}><MapPin className="w-6 h-6 text-white" /></div><div><h4 className="font-bold text-lg mb-1" style={{color: '#000000'}}>Office Address</h4><p style={{color: '#333333'}}>913 block c Aaradhna residency, Manglam City, Kalwar Road, Hatoj, 302012</p></div></div>
             </div>
             <div className="p-8" style={{background: '#FFFFFF', border: '1px solid #000000'}}>
               <h4 className="text-2xl font-bold mb-6" style={{color: '#000000', fontFamily: 'var(--font-sora)'}}>Send Us a Message</h4>
@@ -241,7 +254,7 @@ export default function HomePage() {
         <div className="max-w-7xl mx-auto">
           <div className="grid md:grid-cols-4 gap-8 mb-8">
             <div className="md:col-span-2">
-              <h5 className="text-2xl font-bold mb-4" style={{color: '#FFFFFF', fontFamily: 'var(--font-sora)'}}>ShiftX</h5>
+              <h5 className="text-2xl font-bold mb-4" style={{color: '#FFFFFF', fontFamily: 'var(--font-sora)'}}>EasyshiftX</h5>
               <p className="text-white text-opacity-80 mb-4">Your trusted partner for seamless relocation across PAN India since 2018. We handle your belongings with care and professionalism.</p>
               <div className="flex gap-4"><Award className="w-6 h-6" style={{color: '#FF6B35'}} /><Shield className="w-6 h-6" style={{color: '#FF6B35'}} /><TrendingUp className="w-6 h-6" style={{color: '#FF6B35'}} /></div>
             </div>
@@ -266,8 +279,8 @@ export default function HomePage() {
             </div>
           </div>
           <div className="border-t border-white border-opacity-20 pt-8 text-center">
-            <p className="text-white text-opacity-80 mb-2">&copy; 2018 ShiftX. All rights reserved.</p>
-            <p className="text-white text-opacity-60 text-sm"><strong>easyShiftXpackersandmovers.com</strong> | Professional Moving Services PAN India</p>
+            <p className="text-white text-opacity-80 mb-2">&copy; 2018 EasyshiftX. All rights reserved.</p>
+            <p className="text-white text-opacity-60 text-sm"><strong>easyshiftxpackersandmovers.com</strong> | Professional Moving Services PAN India</p>
           </div>
         </div>
       </footer>

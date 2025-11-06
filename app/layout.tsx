@@ -9,7 +9,7 @@ const sora = Sora({
 });
 
 export const metadata: Metadata = {
-  title: "ShiftX Packers and Movers",
+  title: "EasyshiftX Packers and Movers",
   description: "Professional packers and movers services across PAN India. Door-to-door shifting, office moving, car transport, storage, and more.",
 };
 
