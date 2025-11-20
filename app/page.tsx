@@ -5,6 +5,15 @@ import { useState } from 'react';
 export default function HomePage() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [openFaq, setOpenFaq] = useState<number | null>(null);
+  const [showSuccess, setShowSuccess] = useState(false);
+
+  // Simple success popup handler
+  const handleContactSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    const form = e.target as HTMLFormElement;
+    setShowSuccess(true);
+    form.reset();
+  };
 
   const services = [
     { icon: Home, name: "Ghar Shifting", desc: "Safe and efficient home relocation with expert packing" },
@@ -241,12 +250,17 @@ export default function HomePage() {
             </div>
             <div className="p-8" style={{background: '#FFFFFF', border: '1px solid #000000'}}>
               <h4 className="text-2xl font-bold mb-6" style={{color: '#000000', fontFamily: 'var(--font-sora)'}}>Send Us a Message</h4>
-              <form className="space-y-5">
-                <div><label className="block mb-2 font-medium" style={{color: '#333333'}}>Your Name *</label><input type="text" placeholder="Enter your full name" className="w-full p-4 border-2 focus:outline-none transition" style={{borderColor: '#000000'}} /></div>
-                <div><label className="block mb-2 font-medium" style={{color: '#333333'}}>Email Address *</label><input type="email" placeholder="your.email@example.com" className="w-full p-4 border-2 focus:outline-none transition" style={{borderColor: '#000000'}} /></div>
-                <div><label className="block mb-2 font-medium" style={{color: '#333333'}}>Phone Number *</label><input type="tel" placeholder="+91 98765 43210" className="w-full p-4 border-2 focus:outline-none transition" style={{borderColor: '#000000'}} /></div>
-                <div><label className="block mb-2 font-medium" style={{color: '#333333'}}>Your Message *</label><textarea placeholder="Tell us about your moving requirements..." rows={5} className="w-full p-4 border-2 focus:outline-none transition" style={{borderColor: '#000000'}}></textarea></div>
+              <form className="space-y-5" onSubmit={handleContactSubmit}>
+                <div><label className="block mb-2 font-medium" style={{color: '#333333'}}>Your Name *</label><input type="text" name="name" placeholder="Enter your full name" className="w-full p-4 border-2 focus:outline-none transition" style={{borderColor: '#000000'}} required /></div>
+                <div><label className="block mb-2 font-medium" style={{color: '#333333'}}>Email Address *</label><input type="email" name="email" placeholder="your.email@example.com" className="w-full p-4 border-2 focus:outline-none transition" style={{borderColor: '#000000'}} required /></div>
+                <div><label className="block mb-2 font-medium" style={{color: '#333333'}}>Phone Number *</label><input type="tel" name="phone" placeholder="+91 98765 43210" className="w-full p-4 border-2 focus:outline-none transition" style={{borderColor: '#000000'}} required /></div>
+                <div><label className="block mb-2 font-medium" style={{color: '#333333'}}>Your Message *</label><textarea name="message" placeholder="Tell us about your moving requirements..." rows={5} className="w-full p-4 border-2 focus:outline-none transition" style={{borderColor: '#000000'}} required></textarea></div>
                 <button type="submit" className="w-full py-4 text-white font-bold text-lg hover:opacity-90 transition" style={{background: '#FF6B35', fontFamily: 'var(--font-sora)'}}>Send Message</button>
+                {showSuccess && (
+                  <div className="mt-6 p-4 bg-green-100 text-green-800 rounded text-center font-semibold">
+                    Thank you! We will contact you soon.
+                  </div>
+                )}
               </form>
             </div>
           </div>
